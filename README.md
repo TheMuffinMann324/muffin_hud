@@ -2,7 +2,7 @@
 
 A comprehensive, fully customizable HUD system for FiveM servers featuring drag-and-drop positioning, extensive visual customization, icon selection, and database persistence. Compatible with both Qbox and QBCore frameworks.
 
-![Muffin HUD Preview](https://youtu.be/wLu89aXvFeQ)
+Muffin HUD Preview https://youtu.be/wLu89aXvFeQ
 
 ## ✨ Features
 
