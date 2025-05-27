@@ -46,7 +46,7 @@ A comprehensive, fully customizable HUD system for FiveM servers featuring drag-
 ## 📋 Requirements
 
 ### Required Dependencies
-- **QBCore Framework** - Main framework support <<<QBOX IS SUPPORTED BECAUSE OF THE BRIDGE>>>
+- **QBCore Framework** - Main framework support --- QBOX IS SUPPORTED BECAUSE OF THE BRIDGE
 - **mysql-async** or **oxmysql** - Database functionality
 
 ### Optional Dependencies
