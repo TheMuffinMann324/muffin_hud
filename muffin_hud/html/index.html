@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muffin HUD</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Updated FontAwesome to latest version -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div id="hud-container">
+        <!-- Dynamic HUD elements will be generated here -->
+    </div>
+
+    <!-- Edit Mode UI -->
+    <div id="edit-menu" class="edit-menu hidden">
+        <div class="edit-menu-header">
+            <h2><i class="fas fa-cog"></i> HUD Configuration</h2>
+            <button id="close-edit" class="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="edit-menu-content">
+            <div class="section">
+                <h3>HUD Settings</h3>
+                <div id="settings-toggles" class="settings-toggles">
+                    <!-- Settings toggles will be generated dynamically -->
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3>Element Visibility</h3>
+                <div id="element-toggles" class="element-toggles">
+                    <!-- Toggles will be generated dynamically -->
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3>Selected Element Settings</h3>
+                <div id="element-settings" class="element-settings">
+                    <p class="no-selection">Click on a HUD element to customize it</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h3>Actions</h3>
+                <div class="action-buttons">
+                    <button id="save-config" class="btn btn-primary">
+                        <i class="fas fa-save"></i> Save Configuration
+                    </button>
+                    <button id="reset-config" class="btn btn-secondary">
+                        <i class="fas fa-undo"></i> Reset to Default
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Color Picker Modal -->
+    <div id="color-picker-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Choose Color</h3>
+                <button class="close-modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="color-picker"></div>
+                <div class="color-presets">
+                    <div class="preset-color" data-color="#FF4757" style="background: #FF4757;"></div>
+                    <div class="preset-color" data-color="#3742FA" style="background: #3742FA;"></div>
+                    <div class="preset-color" data-color="#2ECC71" style="background: #2ECC71;"></div>
+                    <div class="preset-color" data-color="#E74C3C" style="background: #E74C3C;"></div>
+                    <div class="preset-color" data-color="#F39C12" style="background: #F39C12;"></div>
+                    <div class="preset-color" data-color="#9B59B6" style="background: #9B59B6;"></div>
+                    <div class="preset-color" data-color="#1ABC9C" style="background: #1ABC9C;"></div>
+                    <div class="preset-color" data-color="#34495E" style="background: #34495E;"></div>
+                </div>
+                <div class="color-input-group">
+                    <input type="text" id="color-hex" placeholder="#FF4757" maxlength="7">
+                    <button id="apply-color" class="btn btn-primary">Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="colorpicker.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
